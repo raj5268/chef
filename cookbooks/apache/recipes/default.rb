@@ -4,9 +4,9 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 if node['platform_family'] == "rhel"
-	packege = "httpd"
-elsif node['platform_family'] == "deian"
-	packege = "apache2" 
+	package = "httpd"
+elsif node['platform_family'] == "debian"
+	package = "apache2" 
 end
 package 'apache2' do
 	package_name package
